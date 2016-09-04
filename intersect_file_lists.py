@@ -35,9 +35,6 @@ home_dict = make_entries_dict(home_files_txt)
 backup_dict = make_entries_dict(backup_files_txt)
 
 unmatched_keys = [key for key in home_dict.keys() if not key in backup_dict.keys()]
-# filtered = [i for i in a if not i[0] in b]
-
-# print unmatched_keys
 
 for key in unmatched_keys: 
     item = home_dict[key]
