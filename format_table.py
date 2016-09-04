@@ -1,6 +1,13 @@
 #!/usr/bin/env python
 # python 2.7
 
+
+# have: a table concatenated into a single line separated by \t
+# want: an actual table, with 5 columns
+# need to convert every 5th \t into a \n
+
+
+
 import sys
 import os
 import collections
@@ -11,10 +18,6 @@ def list_file_lines(file_path):
     with open(file_path, 'r') as f:
         entries = [line.strip() for line in f if line.strip()]
     return entries
-
-# have: a table concatenated into a single line separated by \t
-# want: an actual table, with 5 columns
-# need to convert every 5th \t into a \n
 
 # read the file; 
 loans_table_path = "/Users/steve/Downloads/loan_transactions2.txt"
