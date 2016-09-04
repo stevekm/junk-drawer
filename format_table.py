@@ -4,7 +4,7 @@
 
 # have: a table concatenated into a single line separated by \t
 # want: an actual table, with 5 columns
-# need to convert every 5th \t into a \n
+# need to convert it back into a real table
 
 
 
