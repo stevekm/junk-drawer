@@ -36,14 +36,17 @@ def get_duplicates(file_path, *args, **kwargs):
             dupes_dict[key] = value
     return dupes_dict
 
-def print_dict(some_dict):
+def print_dict(some_dict, value_only = False):
     for key, value in some_dict.items():
         for item in value:
-            print key, item
+            if value_only:
+                print item,
+            else:
+                print key, item,
 
 
 file_list_txt = "/Users/steve/home_files_sort.txt"
 
-print_dict(get_duplicates(file_list_txt, head = 500))
+print_dict(get_duplicates(file_list_txt, head = 500), value_only = True)
 
 
