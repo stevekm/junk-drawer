@@ -1,1 +1,1 @@
-# misc_scripts
+misc scripts and code snippets
